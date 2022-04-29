@@ -1,0 +1,22 @@
+{
+  "name": "howistheweathertoday",
+  "version": "1.0.0",
+  "description": "오늘날씨어때? 성신여대 서버시스템구축실습 팀프로젝트",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suanna01/HowIsTheWeatherToday.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suanna01/HowIsTheWeatherToday/issues"
+  },
+  "homepage": "https://github.com/Suanna01/HowIsTheWeatherToday#readme",
+  "dependencies": {
+    "cities": "^2.0.0"
+  }
+}
