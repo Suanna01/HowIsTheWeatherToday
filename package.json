@@ -4,7 +4,8 @@
   "description": "오늘날씨어때? 성신여대 서버시스템구축실습 팀프로젝트",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/Suanna01/HowIsTheWeatherToday#readme",
   "dependencies": {
-    "cities": "^2.0.0"
+    "cities": "^2.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "http-status-codes": "^2.2.0"
   }
 }

@@ -1,0 +1,184 @@
+@import url('https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+nav{
+    background-color: skyblue;
+    padding: 10px 40px 10px 70px;
+    border-left: none;
+    border-right: none;
+}
+nav ul{
+    display: flex;
+    list-style:none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li.logo{
+    flex:1;
+    font-size:30px;
+    font-weight: 700;
+}
+nav ul div.items{
+    padding: 0 25px;
+    display: inline-flex;
+}
+nav ul div.items a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+}
+nav ul div.items a:hover{
+    color: white;
+}
+nav ul .search-icon{
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+nav ul .search-icon input {
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+nav ul .search-icon .icon {
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+nav ul .search-icon .icon:hover {
+    background: #e6e6e6;
+}
+nav ul .search-icon .icon span {
+    color: #222222;
+    font-size:18px;
+}
+@media screen and (max-width: 1052px) {
+    nav {
+        padding: 10px 40px 10px 0px;
+    }
+    nav ul li.logo {
+        display: none;
+    }
+    nav ul div.items{
+        flex:4;
+    }
+}
+
+/* mypage */
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 93.5rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.btn {
+    all: unset;
+    background: none;
+    color: none;
+    display: inline-block;
+    cursor: pointer;
+    border:none;
+}
+
+.btn:focus {
+    outline:0.5rem auto #4d90fe;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    widows: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Profile Section */
+
+.profile {
+    padding: 5rem 0;
+}
+
+.profile::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.profile-image {
+    float: left;
+    width: calc(33.333% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.profile-image img {
+    border-radius: 50%;
+}
+
+.profile-user-settings,
+.profile-stats,
+.profile-bio {
+    float: left;
+    width: calc(66.666% - 2rem);
+}
+
+.profile-user-settings {
+    margin-top: 1.1rem;
+}
+
+.profile-edit-btn {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    border: 0.1rem solid #dbdbdb;
+    border-radius: 0.3rem;
+    padding: 0 2.4rem;
+    margin-left: 2rem;
+}
+
+.profile-settings-btn {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.profile-stats {
+    margin-top: 2.3rem;
+}
