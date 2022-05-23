@@ -1,0 +1,32 @@
+<h3>회원가입</h3>
+<form action="/join" method="post">
+    <table>
+        <tr>
+            <td>아이디 입력 : </td>
+            <td><input type="text" name="userid"></td>
+        </tr>
+        <tr>
+            <td>비번번호 입력 :</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>비번번호 확인 :</td>
+            <td><input type="password" name="check_pw"></td>
+        </tr>
+        <tr>
+          <td>이메일 입력 :</td>
+          <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+          <td>체질 : </td>
+          <td>
+            <input type="radio" name="chk_info" value="user_hot_way">더위타는 편
+            <input type="radio" name="chk_info" value="user_ordi_way">평범한 편
+            <input type="radio" name="chk_info" value="user_cold_way">추위타는 편
+          </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="가입"></td>
+        </tr>
+    </table>
+</form>
