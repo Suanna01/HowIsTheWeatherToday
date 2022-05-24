@@ -1,11 +1,22 @@
 const express = require("express"),
   app = express(),
+  path = require('path'),
   homeController = require("./controllers/homeController"),
   errorController = require("./controllers/errorController"),
-  layouts = require("express-ejs-layouts");
+  layouts = require("express-ejs-layouts"),
+  multer = require('multer'),
+  _storage = multer.diskStorage({
+    destination: (req, file, cb) => { //path
+      cb(null, 'uploads/')
+    },
+    filename: (req, file, cb) => { //파일명
+      cb(null, file.originalname);
+    }
+  })
+upload = multer({ storage: _storage });
 
 app.set("view engine", "ejs");
-app.set("port", process.env.PORT || 80);
+app.set("port", process.env.PORT || 3000);
 app.use(
   express.urlencoded({
     extended: false
@@ -21,6 +32,8 @@ app.get("/", (req, res) => {
 
 app.get("/weather", homeController.respondWithWeather);
 app.get("/mypage", homeController.respondWithMyPage);
+app.get("/upload", homeController.respondWithUpload);
+app.post("/upload", upload.single("userfile"), homeController.postedUploadForm);
 app.get("/logout", homeController.respondWithLogout);
 app.get("/search", homeController.respondWithSearch);
 
